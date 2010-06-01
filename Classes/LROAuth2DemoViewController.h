@@ -7,15 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASIHTTPRequestDelegate.h"
 
 @class LROAuth2AccessToken;
 @class OAuthRequestController;
 
-@interface LROAuth2DemoViewController : UITableViewController {
+@interface LROAuth2DemoViewController : UITableViewController <ASIHTTPRequestDelegate> {
   LROAuth2AccessToken *accessToken;
   OAuthRequestController *oauthController;
+  NSArray *friends;
 }
 @property (nonatomic, retain) LROAuth2AccessToken *accessToken;
+@property (nonatomic, retain) NSArray *friends;
 
 - (void)saveAccessTokenToDisk;
 - (void)beginAuthorization;

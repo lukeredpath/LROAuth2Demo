@@ -9,6 +9,9 @@
 #import "LROAuth2DemoViewController.h"	
 #import "LROAuth2AccessToken.h"
 #import "OAuthRequestController.h"
+#import "ASIHTTPRequest.h"
+#import "NSString+QueryString.h"
+#import "CJSONDeserializer.h"
 
 NSString * AccessTokenSavePath() {
   NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
@@ -18,6 +21,7 @@ NSString * AccessTokenSavePath() {
 @implementation LROAuth2DemoViewController
 
 @synthesize accessToken;
+@synthesize friends;
 
 - (void)viewDidLoad 
 {
@@ -42,11 +46,7 @@ NSString * AccessTokenSavePath() {
   if (self.accessToken == nil) { 
     [self beginAuthorization];
   } else {
-    if ([self.accessToken hasExpired]) { 
-      //[self refreshAccessToken];
-    } else {
-      [self loadFacebookFriends];
-    }
+    [self loadFacebookFriends];
   }
 }
 
@@ -99,7 +99,49 @@ NSString * AccessTokenSavePath() {
 
 - (void)loadFacebookFriends;
 {
+  NSString *URLString = [NSString stringWithFormat:@"https://graph.facebook.com/me/friends?access_token=%@", [self.accessToken.accessToken stringByEscapingForURLQuery]];
+  NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:URLString]];
+
+  [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+  [NSURLConnection connectionWithRequest:request delegate:self];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+  [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
   
+  NSError *jsonError = nil;
+  NSDictionary *friendsData = [[CJSONDeserializer deserializer] deserializeAsDictionary:data error:&jsonError];
+  if (jsonError) {
+    NSLog(@"JSON parse error: %@", jsonError);
+  } else {
+    self.friends = [friendsData valueForKey:@"data"];
+    [self.tableView reloadData];
+  }
+}
+
+#pragma mark -
+#pragma mark UITableView methods
+
+- (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section
+{
+  if (self.friends == nil) {
+    return 0;
+  }
+  return self.friends.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  static NSString *identifier = @"Cell";
+  
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+  if (cell == nil) {
+    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewStylePlain reuseIdentifier:identifier] autorelease];
+  }
+  NSDictionary *friend = [self.friends objectAtIndex:indexPath.row];
+  cell.textLabel.text = [friend valueForKey:@"name"];
+  return cell;
 }
 
 @end

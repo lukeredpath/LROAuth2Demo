@@ -52,7 +52,6 @@ NSString * AccessTokenSavePath() {
 
 - (void)dealloc 
 {
-  [oauthController release];
   [friends release];
   [accessToken release];
   [super dealloc];
@@ -84,9 +83,7 @@ NSString * AccessTokenSavePath() {
 
 - (void)beginAuthorization;
 {
-  if (oauthController == nil) {
-    oauthController = [[OAuthRequestController alloc] init];
-  }
+  OAuthRequestController *oauthController = [[OAuthRequestController alloc] init];
   [self presentModalViewController:oauthController animated:YES];
   [oauthController release];
 }

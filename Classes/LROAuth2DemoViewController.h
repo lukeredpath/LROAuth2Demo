@@ -10,11 +10,9 @@
 #import "ASIHTTPRequestDelegate.h"
 
 @class LROAuth2AccessToken;
-@class OAuthRequestController;
 
 @interface LROAuth2DemoViewController : UITableViewController <ASIHTTPRequestDelegate> {
   LROAuth2AccessToken *accessToken;
-  OAuthRequestController *oauthController;
   NSArray *friends;
 }
 @property (nonatomic, retain) LROAuth2AccessToken *accessToken;
@@ -22,7 +20,6 @@
 
 - (void)saveAccessTokenToDisk;
 - (void)beginAuthorization;
-- (void)refreshAccessToken;
 - (void)loadFacebookFriends;
 @end
 

@@ -1,0 +1,3 @@
+[submodule "Vendor/LROAuth2Client"]
+	path = Vendor/LROAuth2Client
+	url = git://github.com/lukeredpath/LROAuth2Client.git

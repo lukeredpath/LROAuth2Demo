@@ -171,10 +171,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A3B6F63311B5509D00533386 /* Controllers */,
 				1D3623240D0F684500981E51 /* LROAuth2DemoAppDelegate.h */,
 				1D3623250D0F684500981E51 /* LROAuth2DemoAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* LROAuth2DemoViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* LROAuth2DemoViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -375,6 +374,15 @@
 			);
 			name = JSON;
 			path = Source/JSON;
+			sourceTree = "<group>";
+		};
+		A3B6F63311B5509D00533386 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28D7ACF60DDB3853001CB0EB /* LROAuth2DemoViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* LROAuth2DemoViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

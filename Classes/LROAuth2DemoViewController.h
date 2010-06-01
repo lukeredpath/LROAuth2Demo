@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LROAuth2DemoViewController : UIViewController {
+@interface LROAuth2DemoViewController : UITableViewController {
 
 }
 

@@ -52,6 +52,8 @@ NSString * AccessTokenSavePath() {
 
 - (void)dealloc 
 {
+  [oauthController release];
+  [friends release];
   [accessToken release];
   [super dealloc];
 }

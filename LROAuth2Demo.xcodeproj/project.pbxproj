@@ -54,6 +54,8 @@
 		A3B6F5F211B54FA300533386 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B6F5F111B54FA300533386 /* CFNetwork.framework */; };
 		A3B6F5F711B54FB500533386 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B6F5F611B54FB500533386 /* libz.1.2.3.dylib */; };
 		A3B6F61111B5502600533386 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B6F61011B5502600533386 /* MobileCoreServices.framework */; };
+		A3B6F63D11B550ED00533386 /* OAuthRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F63B11B550ED00533386 /* OAuthRequestController.m */; };
+		A3B6F63E11B550ED00533386 /* OAuthRequestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B6F63C11B550ED00533386 /* OAuthRequestController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +150,11 @@
 		A3B6F5F111B54FA300533386 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A3B6F5F611B54FB500533386 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		A3B6F61011B5502600533386 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A3B6F63A11B550ED00533386 /* OAuthRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthRequestController.h; sourceTree = "<group>"; };
+		A3B6F63B11B550ED00533386 /* OAuthRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthRequestController.m; sourceTree = "<group>"; };
+		A3B6F63C11B550ED00533386 /* OAuthRequestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OAuthRequestController.xib; path = Classes/OAuthRequestController.xib; sourceTree = "<group>"; };
+		A3B6F64511B5517B00533386 /* OAuthCredentials-Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuthCredentials-Example.h"; sourceTree = "<group>"; };
+		A3B6F64611B5522D00533386 /* OAuthCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCredentials.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +209,10 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A3B6F64611B5522D00533386 /* OAuthCredentials.h */,
 				32CA4F630368D1EE00C91783 /* LROAuth2Demo_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				A3B6F64511B5517B00533386 /* OAuthCredentials-Example.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -211,6 +220,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A3B6F63C11B550ED00533386 /* OAuthRequestController.xib */,
 				2899E5210DE3E06400AC0155 /* LROAuth2DemoViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* LROAuth2Demo-Info.plist */,
@@ -381,6 +391,8 @@
 			children = (
 				28D7ACF60DDB3853001CB0EB /* LROAuth2DemoViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* LROAuth2DemoViewController.m */,
+				A3B6F63A11B550ED00533386 /* OAuthRequestController.h */,
+				A3B6F63B11B550ED00533386 /* OAuthRequestController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -429,6 +441,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* LROAuth2DemoViewController.xib in Resources */,
+				A3B6F63E11B550ED00533386 /* OAuthRequestController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +490,7 @@
 				A3B6F5C211B54EFD00533386 /* CJSONSerializer.m in Sources */,
 				A3B6F5C311B54EFD00533386 /* CSerializedJSONData.m in Sources */,
 				A3B6F5CA11B54F1100533386 /* Reachability.m in Sources */,
+				A3B6F63D11B550ED00533386 /* OAuthRequestController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

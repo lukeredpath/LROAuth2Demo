@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class LROAuth2AccessToken;
+@class OAuthRequestController;
+
 @interface LROAuth2DemoViewController : UITableViewController {
-
+  LROAuth2AccessToken *accessToken;
+  OAuthRequestController *oauthController;
 }
+@property (nonatomic, retain) LROAuth2AccessToken *accessToken;
 
+- (void)saveAccessTokenToDisk;
+- (void)beginAuthorization;
+- (void)refreshAccessToken;
+- (void)loadFacebookFriends;
 @end
 

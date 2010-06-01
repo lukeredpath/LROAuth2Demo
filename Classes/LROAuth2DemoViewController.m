@@ -42,7 +42,7 @@ NSString * AccessTokenSavePath() {
   // try and load an existing access token from disk
   self.accessToken = [NSKeyedUnarchiver unarchiveObjectWithFile:AccessTokenSavePath()];
 
-  // check if we have a valid access token before continuing otherwise obtain/refresh a token
+  // check if we have a valid access token before continuing otherwise obtain a token
   if (self.accessToken == nil) { 
     [self beginAuthorization];
   } else {
@@ -89,14 +89,6 @@ NSString * AccessTokenSavePath() {
   [oauthController release];
 }
 
-- (void)refreshAccessToken;
-{
-  if (oauthController == nil) {
-    oauthController = [[OAuthRequestController alloc] init];
-  }
-  [oauthController refreshAccessToken:self.accessToken];
-}
-
 - (void)loadFacebookFriends;
 {
   NSString *URLString = [NSString stringWithFormat:@"https://graph.facebook.com/me/friends?access_token=%@", [self.accessToken.accessToken stringByEscapingForURLQuery]];
@@ -105,6 +97,9 @@ NSString * AccessTokenSavePath() {
   [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
   [NSURLConnection connectionWithRequest:request delegate:self];
 }
+
+#pragma mark -
+#pragma mark NSURLConnection methods
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {

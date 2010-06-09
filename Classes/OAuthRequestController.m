@@ -33,7 +33,7 @@ NSString *const OAuthRefreshedAccessTokenNotification = @"OAuthRefreshedAccessTo
     oauthClient.userURL  = [NSURL URLWithString:@"https://graph.facebook.com/oauth/authorize"];
     oauthClient.tokenURL = [NSURL URLWithString:@"https://graph.facebook.com/oauth/access_token"];
     
-    self.modalPresentationStyle = UIModalPresentationFullScreen;
+    self.modalPresentationStyle = UIModalPresentationFormSheet;
     self.modalTransitionStyle   = UIModalTransitionStyleCrossDissolve;
   }
   return self;
@@ -47,7 +47,8 @@ NSString *const OAuthRefreshedAccessTokenNotification = @"OAuthRefreshedAccessTo
 
 - (void)viewDidAppear:(BOOL)animated
 {
-  [oauthClient authorizeUsingWebView:self.webView];
+  NSDictionary *params = [NSDictionary dictionaryWithObject:@"touch" forKey:@"display"];
+  [oauthClient authorizeUsingWebView:self.webView additionalParameters:params];
 }
 
 - (void)dealloc 

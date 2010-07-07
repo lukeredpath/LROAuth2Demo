@@ -39,16 +39,6 @@
 		A3B6F59711B54EE600533386 /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F56E11B54EE600533386 /* ASIS3ObjectRequest.m */; };
 		A3B6F59811B54EE600533386 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F57011B54EE600533386 /* ASIS3Request.m */; };
 		A3B6F59911B54EE600533386 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F57211B54EE600533386 /* ASIS3ServiceRequest.m */; };
-		A3B6F5BA11B54EFD00533386 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5A511B54EFD00533386 /* CDataScanner.m */; };
-		A3B6F5BB11B54EFD00533386 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5A811B54EFD00533386 /* CDataScanner_Extensions.m */; };
-		A3B6F5BC11B54EFD00533386 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5AA11B54EFD00533386 /* NSCharacterSet_Extensions.m */; };
-		A3B6F5BD11B54EFD00533386 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5AC11B54EFD00533386 /* NSDictionary_JSONExtensions.m */; };
-		A3B6F5BE11B54EFD00533386 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5AE11B54EFD00533386 /* NSScanner_Extensions.m */; };
-		A3B6F5BF11B54EFD00533386 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5B111B54EFD00533386 /* CJSONDataSerializer.m */; };
-		A3B6F5C011B54EFD00533386 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5B311B54EFD00533386 /* CJSONDeserializer.m */; };
-		A3B6F5C111B54EFD00533386 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5B511B54EFD00533386 /* CJSONScanner.m */; };
-		A3B6F5C211B54EFD00533386 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5B711B54EFD00533386 /* CJSONSerializer.m */; };
-		A3B6F5C311B54EFD00533386 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5B911B54EFD00533386 /* CSerializedJSONData.m */; };
 		A3B6F5CA11B54F1100533386 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F5C911B54F1100533386 /* Reachability.m */; };
 		A3B6F5D611B54F2A00533386 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B6F5D511B54F2A00533386 /* SystemConfiguration.framework */; };
 		A3B6F5F211B54FA300533386 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B6F5F111B54FA300533386 /* CFNetwork.framework */; };
@@ -56,6 +46,18 @@
 		A3B6F61111B5502600533386 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B6F61011B5502600533386 /* MobileCoreServices.framework */; };
 		A3B6F63D11B550ED00533386 /* OAuthRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B6F63B11B550ED00533386 /* OAuthRequestController.m */; };
 		A3B6F63E11B550ED00533386 /* OAuthRequestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B6F63C11B550ED00533386 /* OAuthRequestController.xib */; };
+		A3FD768911E4A46D008A44FB /* yajl.c in Sources */ = {isa = PBXBuildFile; fileRef = A3FD767911E4A46D008A44FB /* yajl.c */; };
+		A3FD768B11E4A46D008A44FB /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = A3FD767B11E4A46D008A44FB /* yajl_alloc.c */; };
+		A3FD768C11E4A46D008A44FB /* yajl_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = A3FD767D11E4A46D008A44FB /* yajl_buf.c */; };
+		A3FD768D11E4A46D008A44FB /* yajl_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = A3FD768011E4A46D008A44FB /* yajl_encode.c */; };
+		A3FD768E11E4A46D008A44FB /* yajl_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = A3FD768211E4A46D008A44FB /* yajl_gen.c */; };
+		A3FD768F11E4A46D008A44FB /* yajl_lex.c in Sources */ = {isa = PBXBuildFile; fileRef = A3FD768311E4A46D008A44FB /* yajl_lex.c */; };
+		A3FD769011E4A46D008A44FB /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = A3FD768511E4A46D008A44FB /* yajl_parser.c */; };
+		A3FD769A11E4A488008A44FB /* NSObject+YAJL.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD769211E4A488008A44FB /* NSObject+YAJL.m */; };
+		A3FD769B11E4A488008A44FB /* YAJLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD769511E4A488008A44FB /* YAJLDocument.m */; };
+		A3FD769C11E4A488008A44FB /* YAJLGen.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD769711E4A488008A44FB /* YAJLGen.m */; };
+		A3FD769D11E4A488008A44FB /* YAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD769911E4A488008A44FB /* YAJLParser.m */; };
+		A3FD76A211E4A496008A44FB /* YAJL_GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD76A111E4A496008A44FB /* YAJL_GTMBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,26 +125,6 @@
 		A3B6F57011B54EE600533386 /* ASIS3Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3Request.m; sourceTree = "<group>"; };
 		A3B6F57111B54EE600533386 /* ASIS3ServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3ServiceRequest.h; sourceTree = "<group>"; };
 		A3B6F57211B54EE600533386 /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ServiceRequest.m; sourceTree = "<group>"; };
-		A3B6F5A411B54EFD00533386 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDataScanner.h; path = Source/CDataScanner.h; sourceTree = "<group>"; };
-		A3B6F5A511B54EFD00533386 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner.m; path = Source/CDataScanner.m; sourceTree = "<group>"; };
-		A3B6F5A711B54EFD00533386 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
-		A3B6F5A811B54EFD00533386 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
-		A3B6F5A911B54EFD00533386 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
-		A3B6F5AA11B54EFD00533386 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
-		A3B6F5AB11B54EFD00533386 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
-		A3B6F5AC11B54EFD00533386 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
-		A3B6F5AD11B54EFD00533386 /* NSScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScanner_Extensions.h; sourceTree = "<group>"; };
-		A3B6F5AE11B54EFD00533386 /* NSScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScanner_Extensions.m; sourceTree = "<group>"; };
-		A3B6F5B011B54EFD00533386 /* CJSONDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDataSerializer.h; sourceTree = "<group>"; };
-		A3B6F5B111B54EFD00533386 /* CJSONDataSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDataSerializer.m; sourceTree = "<group>"; };
-		A3B6F5B211B54EFD00533386 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
-		A3B6F5B311B54EFD00533386 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
-		A3B6F5B411B54EFD00533386 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
-		A3B6F5B511B54EFD00533386 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
-		A3B6F5B611B54EFD00533386 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
-		A3B6F5B711B54EFD00533386 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
-		A3B6F5B811B54EFD00533386 /* CSerializedJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSerializedJSONData.h; sourceTree = "<group>"; };
-		A3B6F5B911B54EFD00533386 /* CSerializedJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSerializedJSONData.m; sourceTree = "<group>"; };
 		A3B6F5C811B54F1100533386 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = External/Reachability2.0/Reachability.h; sourceTree = "<group>"; };
 		A3B6F5C911B54F1100533386 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = External/Reachability2.0/Reachability.m; sourceTree = "<group>"; };
 		A3B6F5D511B54F2A00533386 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -155,6 +137,33 @@
 		A3B6F63C11B550ED00533386 /* OAuthRequestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OAuthRequestController.xib; path = Classes/OAuthRequestController.xib; sourceTree = "<group>"; };
 		A3B6F64511B5517B00533386 /* OAuthCredentials-Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuthCredentials-Example.h"; sourceTree = "<group>"; };
 		A3B6F64611B5522D00533386 /* OAuthCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCredentials.h; sourceTree = "<group>"; };
+		A3FD767411E4A46D008A44FB /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
+		A3FD767511E4A46D008A44FB /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
+		A3FD767611E4A46D008A44FB /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		A3FD767911E4A46D008A44FB /* yajl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl.c; sourceTree = "<group>"; };
+		A3FD767B11E4A46D008A44FB /* yajl_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_alloc.c; sourceTree = "<group>"; };
+		A3FD767C11E4A46D008A44FB /* yajl_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_alloc.h; sourceTree = "<group>"; };
+		A3FD767D11E4A46D008A44FB /* yajl_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_buf.c; sourceTree = "<group>"; };
+		A3FD767E11E4A46D008A44FB /* yajl_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_buf.h; sourceTree = "<group>"; };
+		A3FD767F11E4A46D008A44FB /* yajl_bytestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_bytestack.h; sourceTree = "<group>"; };
+		A3FD768011E4A46D008A44FB /* yajl_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_encode.c; sourceTree = "<group>"; };
+		A3FD768111E4A46D008A44FB /* yajl_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_encode.h; sourceTree = "<group>"; };
+		A3FD768211E4A46D008A44FB /* yajl_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_gen.c; sourceTree = "<group>"; };
+		A3FD768311E4A46D008A44FB /* yajl_lex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_lex.c; sourceTree = "<group>"; };
+		A3FD768411E4A46D008A44FB /* yajl_lex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_lex.h; sourceTree = "<group>"; };
+		A3FD768511E4A46D008A44FB /* yajl_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_parser.c; sourceTree = "<group>"; };
+		A3FD768611E4A46D008A44FB /* yajl_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parser.h; sourceTree = "<group>"; };
+		A3FD769111E4A488008A44FB /* NSObject+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+YAJL.h"; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Classes/NSObject+YAJL.h"; sourceTree = "<group>"; };
+		A3FD769211E4A488008A44FB /* NSObject+YAJL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YAJL.m"; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Classes/NSObject+YAJL.m"; sourceTree = "<group>"; };
+		A3FD769311E4A488008A44FB /* YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJL.h; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Classes/YAJL.h"; sourceTree = "<group>"; };
+		A3FD769411E4A488008A44FB /* YAJLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLDocument.h; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Classes/YAJLDocument.h"; sourceTree = "<group>"; };
+		A3FD769511E4A488008A44FB /* YAJLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YAJLDocument.m; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Classes/YAJLDocument.m"; sourceTree = "<group>"; };
+		A3FD769611E4A488008A44FB /* YAJLGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLGen.h; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Classes/YAJLGen.h"; sourceTree = "<group>"; };
+		A3FD769711E4A488008A44FB /* YAJLGen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YAJLGen.m; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Classes/YAJLGen.m"; sourceTree = "<group>"; };
+		A3FD769811E4A488008A44FB /* YAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLParser.h; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Classes/YAJLParser.h"; sourceTree = "<group>"; };
+		A3FD769911E4A488008A44FB /* YAJLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YAJLParser.m; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Classes/YAJLParser.m"; sourceTree = "<group>"; };
+		A3FD76A011E4A496008A44FB /* YAJL_GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJL_GTMBase64.h; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Libraries/GTM/YAJL_GTMBase64.h"; sourceTree = "<group>"; };
+		A3FD76A111E4A496008A44FB /* YAJL_GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YAJL_GTMBase64.m; path = "Vendor/LROAuth2Client/Vendor/yajl-objc/Libraries/GTM/YAJL_GTMBase64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,9 +254,9 @@
 		A3B6F52811B54E6400533386 /* LROAuth2Client */ = {
 			isa = PBXGroup;
 			children = (
+				A3FD764511E4A357008A44FB /* YAJL */,
 				A3B6F5E211B54F6600533386 /* ASIHTTPRequestConfig.h */,
 				A3B6F53A11B54E8D00533386 /* ASIHTTPRequest */,
-				A3B6F53C11B54E8D00533386 /* TouchJSON */,
 				A3B6F52911B54E7C00533386 /* Classes */,
 				A3B6F52F11B54E7C00533386 /* NSDictionary+QueryString.h */,
 				A3B6F53011B54E7C00533386 /* NSDictionary+QueryString.m */,
@@ -298,18 +307,6 @@
 			path = Vendor/LROAuth2Client/Vendor/ASIHTTPRequest;
 			sourceTree = "<group>";
 		};
-		A3B6F53C11B54E8D00533386 /* TouchJSON */ = {
-			isa = PBXGroup;
-			children = (
-				A3B6F5A411B54EFD00533386 /* CDataScanner.h */,
-				A3B6F5A511B54EFD00533386 /* CDataScanner.m */,
-				A3B6F5A611B54EFD00533386 /* Extensions */,
-				A3B6F5AF11B54EFD00533386 /* JSON */,
-			);
-			name = TouchJSON;
-			path = Vendor/LROAuth2Client/Vendor/TouchJSON;
-			sourceTree = "<group>";
-		};
 		A3B6F55711B54EE600533386 /* CloudFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,40 +349,6 @@
 			path = Classes/S3;
 			sourceTree = "<group>";
 		};
-		A3B6F5A611B54EFD00533386 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A3B6F5A711B54EFD00533386 /* CDataScanner_Extensions.h */,
-				A3B6F5A811B54EFD00533386 /* CDataScanner_Extensions.m */,
-				A3B6F5A911B54EFD00533386 /* NSCharacterSet_Extensions.h */,
-				A3B6F5AA11B54EFD00533386 /* NSCharacterSet_Extensions.m */,
-				A3B6F5AB11B54EFD00533386 /* NSDictionary_JSONExtensions.h */,
-				A3B6F5AC11B54EFD00533386 /* NSDictionary_JSONExtensions.m */,
-				A3B6F5AD11B54EFD00533386 /* NSScanner_Extensions.h */,
-				A3B6F5AE11B54EFD00533386 /* NSScanner_Extensions.m */,
-			);
-			name = Extensions;
-			path = Source/Extensions;
-			sourceTree = "<group>";
-		};
-		A3B6F5AF11B54EFD00533386 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				A3B6F5B011B54EFD00533386 /* CJSONDataSerializer.h */,
-				A3B6F5B111B54EFD00533386 /* CJSONDataSerializer.m */,
-				A3B6F5B211B54EFD00533386 /* CJSONDeserializer.h */,
-				A3B6F5B311B54EFD00533386 /* CJSONDeserializer.m */,
-				A3B6F5B411B54EFD00533386 /* CJSONScanner.h */,
-				A3B6F5B511B54EFD00533386 /* CJSONScanner.m */,
-				A3B6F5B611B54EFD00533386 /* CJSONSerializer.h */,
-				A3B6F5B711B54EFD00533386 /* CJSONSerializer.m */,
-				A3B6F5B811B54EFD00533386 /* CSerializedJSONData.h */,
-				A3B6F5B911B54EFD00533386 /* CSerializedJSONData.m */,
-			);
-			name = JSON;
-			path = Source/JSON;
-			sourceTree = "<group>";
-		};
 		A3B6F63311B5509D00533386 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +358,57 @@
 				A3B6F63B11B550ED00533386 /* OAuthRequestController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A3FD764511E4A357008A44FB /* YAJL */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD76A011E4A496008A44FB /* YAJL_GTMBase64.h */,
+				A3FD76A111E4A496008A44FB /* YAJL_GTMBase64.m */,
+				A3FD769111E4A488008A44FB /* NSObject+YAJL.h */,
+				A3FD769211E4A488008A44FB /* NSObject+YAJL.m */,
+				A3FD769311E4A488008A44FB /* YAJL.h */,
+				A3FD769411E4A488008A44FB /* YAJLDocument.h */,
+				A3FD769511E4A488008A44FB /* YAJLDocument.m */,
+				A3FD769611E4A488008A44FB /* YAJLGen.h */,
+				A3FD769711E4A488008A44FB /* YAJLGen.m */,
+				A3FD769811E4A488008A44FB /* YAJLParser.h */,
+				A3FD769911E4A488008A44FB /* YAJLParser.m */,
+				A3FD767211E4A46D008A44FB /* src */,
+			);
+			name = YAJL;
+			sourceTree = "<group>";
+		};
+		A3FD767211E4A46D008A44FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD767311E4A46D008A44FB /* api */,
+				A3FD767911E4A46D008A44FB /* yajl.c */,
+				A3FD767B11E4A46D008A44FB /* yajl_alloc.c */,
+				A3FD767C11E4A46D008A44FB /* yajl_alloc.h */,
+				A3FD767D11E4A46D008A44FB /* yajl_buf.c */,
+				A3FD767E11E4A46D008A44FB /* yajl_buf.h */,
+				A3FD767F11E4A46D008A44FB /* yajl_bytestack.h */,
+				A3FD768011E4A46D008A44FB /* yajl_encode.c */,
+				A3FD768111E4A46D008A44FB /* yajl_encode.h */,
+				A3FD768211E4A46D008A44FB /* yajl_gen.c */,
+				A3FD768311E4A46D008A44FB /* yajl_lex.c */,
+				A3FD768411E4A46D008A44FB /* yajl_lex.h */,
+				A3FD768511E4A46D008A44FB /* yajl_parser.c */,
+				A3FD768611E4A46D008A44FB /* yajl_parser.h */,
+			);
+			name = src;
+			path = "Vendor/LROAuth2Client/Vendor/yajl-objc/yajl-1.0.9/src";
+			sourceTree = "<group>";
+		};
+		A3FD767311E4A46D008A44FB /* api */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD767411E4A46D008A44FB /* yajl_common.h */,
+				A3FD767511E4A46D008A44FB /* yajl_gen.h */,
+				A3FD767611E4A46D008A44FB /* yajl_parse.h */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,18 +493,20 @@
 				A3B6F59711B54EE600533386 /* ASIS3ObjectRequest.m in Sources */,
 				A3B6F59811B54EE600533386 /* ASIS3Request.m in Sources */,
 				A3B6F59911B54EE600533386 /* ASIS3ServiceRequest.m in Sources */,
-				A3B6F5BA11B54EFD00533386 /* CDataScanner.m in Sources */,
-				A3B6F5BB11B54EFD00533386 /* CDataScanner_Extensions.m in Sources */,
-				A3B6F5BC11B54EFD00533386 /* NSCharacterSet_Extensions.m in Sources */,
-				A3B6F5BD11B54EFD00533386 /* NSDictionary_JSONExtensions.m in Sources */,
-				A3B6F5BE11B54EFD00533386 /* NSScanner_Extensions.m in Sources */,
-				A3B6F5BF11B54EFD00533386 /* CJSONDataSerializer.m in Sources */,
-				A3B6F5C011B54EFD00533386 /* CJSONDeserializer.m in Sources */,
-				A3B6F5C111B54EFD00533386 /* CJSONScanner.m in Sources */,
-				A3B6F5C211B54EFD00533386 /* CJSONSerializer.m in Sources */,
-				A3B6F5C311B54EFD00533386 /* CSerializedJSONData.m in Sources */,
 				A3B6F5CA11B54F1100533386 /* Reachability.m in Sources */,
 				A3B6F63D11B550ED00533386 /* OAuthRequestController.m in Sources */,
+				A3FD768911E4A46D008A44FB /* yajl.c in Sources */,
+				A3FD768B11E4A46D008A44FB /* yajl_alloc.c in Sources */,
+				A3FD768C11E4A46D008A44FB /* yajl_buf.c in Sources */,
+				A3FD768D11E4A46D008A44FB /* yajl_encode.c in Sources */,
+				A3FD768E11E4A46D008A44FB /* yajl_gen.c in Sources */,
+				A3FD768F11E4A46D008A44FB /* yajl_lex.c in Sources */,
+				A3FD769011E4A46D008A44FB /* yajl_parser.c in Sources */,
+				A3FD769A11E4A488008A44FB /* NSObject+YAJL.m in Sources */,
+				A3FD769B11E4A488008A44FB /* YAJLDocument.m in Sources */,
+				A3FD769C11E4A488008A44FB /* YAJLGen.m in Sources */,
+				A3FD769D11E4A488008A44FB /* YAJLParser.m in Sources */,
+				A3FD76A211E4A496008A44FB /* YAJL_GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

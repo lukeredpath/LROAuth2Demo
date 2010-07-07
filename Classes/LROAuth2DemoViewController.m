@@ -11,7 +11,7 @@
 #import "OAuthRequestController.h"
 #import "ASIHTTPRequest.h"
 #import "NSString+QueryString.h"
-#import "CJSONDeserializer.h"
+#import "NSObject+YAJL.h"
 
 NSString * AccessTokenSavePath() {
   NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
@@ -105,7 +105,7 @@ NSString * AccessTokenSavePath() {
   [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
   
   NSError *jsonError = nil;
-  NSDictionary *friendsData = [[CJSONDeserializer deserializer] deserializeAsDictionary:data error:&jsonError];
+  NSDictionary *friendsData = [data yajl_JSON];
   if (jsonError) {
     NSLog(@"JSON parse error: %@", jsonError);
   } else {

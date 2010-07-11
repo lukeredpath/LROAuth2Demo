@@ -92,6 +92,8 @@ NSString * AccessTokenSavePath() {
 {
   NSString *URLString = [NSString stringWithFormat:@"https://graph.facebook.com/me/friends?access_token=%@", [self.accessToken.accessToken stringByEscapingForURLQuery]];
   NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:URLString]];
+  [_data release]; _data = nil;
+  _data = [[NSMutableData alloc] init];
 
   [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
   [NSURLConnection connectionWithRequest:request delegate:self];
@@ -100,12 +102,15 @@ NSString * AccessTokenSavePath() {
 #pragma mark -
 #pragma mark NSURLConnection methods
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    [_data appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
   [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
   
   NSError *jsonError = nil;
-  NSDictionary *friendsData = [data yajl_JSON];
+  NSDictionary *friendsData = [_data yajl_JSON];
   if (jsonError) {
     NSLog(@"JSON parse error: %@", jsonError);
   } else {

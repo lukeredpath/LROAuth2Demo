@@ -14,6 +14,7 @@
 @interface LROAuth2DemoViewController : UITableViewController <ASIHTTPRequestDelegate> {
   LROAuth2AccessToken *accessToken;
   NSArray *friends;
+  NSMutableData *_data;
 }
 @property (nonatomic, retain) LROAuth2AccessToken *accessToken;
 @property (nonatomic, retain) NSArray *friends;
